@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Digital Book Shelf</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Digital Book Shelf
+        </h1>
+    </header>
+    <main>
+        <article>
+            <section>
+                <div class="container">
+                    <h3>Masukkan Data Buku</h3>
+                    <hr>
+                    <form class="form" id="form">
+                        <div class="form-input">
+                            <label for="title">Nama Buku :</label>
+                            <input type="text" id="title" name="title" autocomplete="off" required>
+                        </div>
+                        <div class="form-input">
+                            <label for="author">Penulis :</label>
+                            <input type="text" id="author" name="author" autocomplete="off" required>
+                        </div>
+                        <div class="form-input">
+                            <label for="year">Tahun Terbit :</label>
+                            <input type="number" id="year" name="year" autocomplete="off" required>
+                        </div>
+                        <div class="form-radio" id="status">
+                            <label for="isCompleted">
+                                <input type="radio" name="status" id="isCompleted" value="buku yang sudah dibaca." required>
+                                <i>Sudah dibaca</i>
+                            </label>
+                            <label for="isNotCompleted">
+                                <input type="radio" name="status" id="isNotCompleted" value="buku yang belum dibaca.">
+                                <i>Belum dibaca</i>
+                            </label>
+                        </div>
+                        <input type="submit" value="Submit" name="submit" class="btn-submit">
+                    </form>
+                </div>
+            </section>
+
+            <section>
+                <div class="container">
+                    <h3>Status Buku</h3>
+                    <hr>
+                    <h4 class="description" id="description">Status Buku yang diinput.</h4>
+                </div>
+            </section>
+            <section>
+                <div class="container">
+                    <h3>Petunjuk Tombol dalam BookShelf</h3>
+                    <hr>
+                    <div class="icon-list">
+                        <button class="check-button" alt=""></button><p>Masukkan Buku kedalam daftar buku yang sudah dibaca</p>
+                        <button class="incomplete-button" alt=""></button><p>Masukkan Buku kedalam daftar buku yang belum dibaca</p>
+                        <button class="trash-button" alt=""></button><p>Hapus Buku dari daftar</p><br>
+                    </div>
+                </div>
+            </section>
+        </article>
+
+        <aside>
+            <div class="container">
+                <h3 class="container-header">Daftar Buku yang sudah dibaca</h3>
+                <div class="book-list" id="completed-books">
+
+                </div>
+            </div>
+
+            <div class="container">
+                <h3 class="container-header">Daftar Buku yang belum dibaca</h3>
+                <div class="book-list" id="incompleted-books">
+
+                </div>
+            </div>
+        </aside>
+    </main>
+    <footer>
+        <div class="footer-book">
+            <p>&copy;Chrisna Adhi Pranoto | 2021</p>
+        </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
