@@ -1,5 +1,5 @@
 # Digital Bookshelf
-> [DBS](https://chrisnaadhi.github.io/digital-bookshelf/ "Digital Book Shelf")
+> [Digital Book Shelf](https://chrisnaadhi.github.io/digital-bookshelf/)
 
 Sebuah Rak Buku Digital yang dapat digunakan untuk menyimpan sebuah buku.
 Buku yang telah diinput disimpan kedalam `localStorage` browser dengan kriteria sesuai deskripsi buku yang diinput.
