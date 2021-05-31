@@ -53,10 +53,11 @@ function createBook(title, author, year, isCompleted, isIncompleted) {
         );
     } else if (isIncompleted){
         container.append(
-            createCompletedButton()
+            createCompletedButton(),
+            createDeleteButton()
         );
     } else {
-        console.log("Sepertinya terjadi kesalahan")
+        console.log("Sepertinya terjadi kesalahan");
     }
 
     return container
